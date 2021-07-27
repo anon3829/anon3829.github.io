@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8"/>
+	<title>Kiara Skyward Sword Sound Board</title>
+	<link rel="icon" href="ss/favicon.png"> 
+    <meta name="viewport" content="width=device-width"/>
+	<script>
+	const play = (time) => {
+		player.cueVideoById({
+		    videoId: '6MO81KCYz-k',
+		    startSeconds: time,
+		});
+		player.playVideo();
+	}
+	const stop = () => {
+		player.pauseVideo();
+	}
+	</script>
+	<style>
+	.center-list {
+	    padding: 5px;
+	    display: grid;
+	    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	    list-style: none;
+	    margin: 0px;
+	    padding-bottom: 10px;
+	}
+	.center-list li:hover {
+		background: #fc0;
+		cursor: pointer;
+	}
+	.center-list li {
+		margin: 2px;
+		text-align: center;
+		border: solid #900;
+		background: #fdf4e0;
+		border-radius: 10px;
+	}
+	.name {
+		font-size: 1.5em;
+	}
+	.image {
+		height: 100px;
+		width: 100%;
+		object-fit: scale-down;
+	}
+	#player {
+		margin-bottom: 60px;
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#footer:hover {
+		background: #300;
+		color: #ccc;
+	}
+	#footer {
+	    background: #900;
+	    position: fixed;
+	    bottom: 0;
+	    padding-top: 5px;
+	    height: 45px;
+	    width: 100%;
+	    margin: 0px;
+	    text-align: center;
+	    color: white;
+	    font-size: 2em;
+	    cursor: pointer;
+	}
+	body {
+		background: #f00;
+		font-family: sans-serif;
+		margin: 0;
+		padding: 0;
+		overscroll-behavior-y: none;
+	}
+	</style>
+	</head>
+	<body>
+		<ol class="center-list" id="chars">
+		<li onclick="play('15720')">
+			<img class="image" src="ss/bertie.png"/>
+			<span class="name">Bertie</span>
+		</li>
+		<li onclick="play('13216')">
+			<img class="image" src="ss/bucha.png"/>
+			<span class="name">Bucha</span>
+		</li>
+		<li onclick="play('8960')">
+			<img class="image" src="ss/cawlin.png"/>
+			<span class="name">Cawlin</span>
+		</li>
+		<li onclick="play('3970')">
+			<img class="image" src="ss/eagus.png"/>
+			<span class="name">Eagus</span>
+		</li>
+		<li onclick="play('14631')">
+			<img class="image" src="ss/erla.png"/>
+			<span class="name">Erla</span>
+		</li>
+		<li onclick="play('7773')">
+			<img class="image" src="ss/fi.png"/>
+			<span class="name">Fi</span>
+		</li>
+		<li onclick="play('1440')">
+			<img class="image" src="ss/fledge.png"/>
+			<span class="name">Fledge</span>
+		</li>
+		<li onclick="play('2383')">
+			<img class="image" src="ss/gaepora.png"/>
+			<span class="name">Gaepora</span>
+		</li>
+		<li onclick="play('9607')">
+			<img class="image" src="ss/gondo.png"/>
+			<span class="name">Gondo</span>
+		</li>
+		<li onclick="play('11863')">
+			<img class="image" src="ss/gorko.png"/>
+			<span class="name">Gorko</span>
+		</li>
+		<li onclick="play('3422')">
+			<img class="image" src="ss/groose.png"/>
+			<span class="name">Groose</span>
+		</li>
+		<li onclick="play('3336')">
+			<img class="image" src="ss/gully.png"/>
+			<span class="name">Gully</span>
+		</li>
+		<li onclick="play('1581')">
+			<img class="image" src="ss/horwell.png"/>
+			<span class="name">Horwell</span>
+		</li>
+		<li onclick="play('1750')">
+			<img class="image" src="ss/jakamar.png"/>
+			<span class="name">Jakamar</span>
+		</li>
+		<li onclick="play('3180')">
+			<img class="image" src="ss/karane.png"/>
+			<span class="name">Karane</span>
+		</li>
+		<li onclick="play('3719')">
+			<img class="image" src="ss/keet.png"/>
+			<span class="name">Keet</span>
+		</li>
+		<li onclick="play('14182')">
+			<img class="image" src="ss/lopsa.png"/>
+			<span class="name">Lopsa</span>
+		</li>
+		<li onclick="play('9631')">
+			<img class="image" src="ss/luv.png"/>
+			<span class="name">Luv</span>
+		</li>
+		<li onclick="play('12697')">
+			<img class="image" src="ss/machi.png"/>
+			<span class="name">Machi</span>
+		</li>
+		<li onclick="play('11347')">
+			<img class="image" src="ss/old_woman3.png"/>
+			<span class="name">Old One</span>
+		</li>
+		<li onclick="play('14937')">
+			<img class="image" src="ss/oolo.png"/>
+			<span class="name">Oolo</span>
+		</li>
+		<li onclick="play('5974')">
+			<img class="image" src="ss/owlan.png"/>
+			<span class="name">Owlan</span>
+		</li>
+		<li onclick="play('9580')">
+			<img class="image" src="ss/peatrice.png"/>
+			<span class="name">Peatrice</span>
+		</li>
+		<li onclick="play('1364')">
+			<img class="image" src="ss/pipit.png"/>
+			<span class="name">Pipit</span>
+		</li>
+		<li onclick="play('3807')">
+			<img class="image" src="ss/pipit_it.png"/>
+			<span class="name">Pipit (Italian)</span>
+		</li>
+		<li onclick="play('15681')">
+			<img class="image" src="ss/rupin.png"/>
+			<span class="name">Rupin</span>
+		</li>
+		<li onclick="play('9536')">
+			<img class="image" src="ss/sparrot.png"/>
+			<span class="name">Sparrot</span>
+		</li>
+		<!--<li onclick="play('5739')">
+			<img class="image" src="ss/strich.png"/>
+			<span class="name">Strich</span>
+		</li>-->
+		<li onclick="play('2297')">
+			<img class="image" src="ss/zelda.png"/>
+			<span class="name">Zelda</span>
+		</li>
+		</ol>
+
+		<div id="player"></div>
+
+		<div id="footer" onclick="stop()">
+			<span>Stop</span>
+		</div>
+		<script>
+		var scripttag = document.createElement('script');
+		scripttag.src = "https://www.youtube.com/iframe_api";
+		var firstScriptTag = document.getElementsByTagName('script')[0];
+		firstScriptTag.parentNode.insertBefore(scripttag, firstScriptTag);
+		var player;
+		
+		function onYouTubeIframeAPIReady() {
+		  player = new YT.Player('player', {
+		    height: '200',
+		    width: '300',
+		    playerVars: { playsinline: 1 },
+		    events: {
+		    	'onReady': onPlayerReady,
+		    }
+		  });
+		}
+
+		function onPlayerReady(event) {
+			player.cueVideoById({ videoId: '6MO81KCYz-k' });
+		}
+  		</script>
+	</body>
+</html>
