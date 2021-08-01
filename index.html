@@ -6,9 +6,16 @@
 	<link rel="icon" href="ss/favicon.png"> 
     <meta name="viewport" content="width=device-width"/>
 	<script>
-	const play = (time) => {
+	const play = (time, video) => {
+		if (video == 2) {
+			playAt(time, 'aH2LQcPdgbI');
+		} else {
+			playAt(time, '6MO81KCYz-k');
+		}
+	}
+	const playAt = (time, video) => {
 		player.cueVideoById({
-		    videoId: '6MO81KCYz-k',
+		    videoId: video,
 		    startSeconds: time,
 		});
 		player.playVideo();
@@ -79,6 +86,14 @@
 	</head>
 	<body>
 		<ol class="center-list" id="chars">
+		<li onclick="play('11314', 2)">
+			<img class="image" src="ss/batreaux.png"/>
+			<span class="name">Batreaux</span>
+		</li>
+		<li onclick="play('9918', 2)">
+			<img class="image" src="ss/beedle.png"/>
+			<span class="name">Beedle</span>
+		</li>
 		<li onclick="play('15720')">
 			<img class="image" src="ss/bertie.png"/>
 			<span class="name">Bertie</span>
@@ -110,6 +125,10 @@
 		<li onclick="play('2383')">
 			<img class="image" src="ss/gaepora.png"/>
 			<span class="name">Gaepora</span>
+		</li>
+		<li onclick="play('7898', 2)">
+			<img class="image" src="ss/ghirahim.png"/>
+			<span class="name">Ghirahim</span>
 		</li>
 		<li onclick="play('9607')">
 			<img class="image" src="ss/gondo.png"/>
@@ -143,6 +162,18 @@
 			<img class="image" src="ss/keet.png"/>
 			<span class="name">Keet</span>
 		</li>
+		<li onclick="play('10324', 2)">
+			<img class="image" src="ss/kina.png"/>
+			<span class="name">Kina</span>
+		</li>
+		<li onclick="play('11514', 2)">
+			<img class="image" src="ss/kukiel.png"/>
+			<span class="name">Kukiel</span>
+		</li>
+		<li onclick="play('10852', 2)">
+			<img class="image" src="ss/link.png"/>
+			<span class="name">Link</span>
+		</li>
 		<li onclick="play('14182')">
 			<img class="image" src="ss/lopsa.png"/>
 			<span class="name">Lopsa</span>
@@ -167,6 +198,10 @@
 			<img class="image" src="ss/owlan.png"/>
 			<span class="name">Owlan</span>
 		</li>
+		<li onclick="play('10792', 2)">
+			<img class="image" src="ss/parrow.png"/>
+			<span class="name">Parrow</span>
+		</li>
 		<li onclick="play('9580')">
 			<img class="image" src="ss/peatrice.png"/>
 			<span class="name">Peatrice</span>
@@ -179,18 +214,30 @@
 			<img class="image" src="ss/pipit_it.png"/>
 			<span class="name">Pipit (Italian)</span>
 		</li>
+		<li onclick="play('10340', 2)">
+			<img class="image" src="ss/pumm.png"/>
+			<span class="name">Pumm</span>
+		</li>
 		<li onclick="play('15681')">
 			<img class="image" src="ss/rupin.png"/>
 			<span class="name">Rupin</span>
+		</li>
+		<li onclick="play('10261', 2)">
+			<img class="image" src="ss/rusta.png"/>
+			<span class="name">Rusta</span>
 		</li>
 		<li onclick="play('9536')">
 			<img class="image" src="ss/sparrot.png"/>
 			<span class="name">Sparrot</span>
 		</li>
-		<!--<li onclick="play('5739')">
+		<li onclick="play('10219', 2)">
 			<img class="image" src="ss/strich.png"/>
 			<span class="name">Strich</span>
-		</li>-->
+		</li>
+		<li onclick="play('10663', 2)">
+			<img class="image" src="ss/wryna.png"/>
+			<span class="name">Wryna</span>
+		</li>
 		<li onclick="play('2297')">
 			<img class="image" src="ss/zelda.png"/>
 			<span class="name">Zelda</span>
@@ -208,7 +255,7 @@
 		var firstScriptTag = document.getElementsByTagName('script')[0];
 		firstScriptTag.parentNode.insertBefore(scripttag, firstScriptTag);
 		var player;
-		
+
 		function onYouTubeIframeAPIReady() {
 		  player = new YT.Player('player', {
 		    height: '200',
