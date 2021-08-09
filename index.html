@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width"/>
 	<script>
 	const play = (time, video) => {
-		if (video == 2) {
+		if (video == 3) {
+			playAt(time, 'ocp8VDZqLE8');
+		} else if (video == 2) {
 			playAt(time, 'aH2LQcPdgbI');
 		} else {
 			playAt(time, '6MO81KCYz-k');
@@ -82,6 +84,10 @@
 		padding: 0;
 		overscroll-behavior-y: none;
 	}
+	.pun {
+ 	   display: none;
+ 	   font-style: italic;
+	}
 	</style>
 	</head>
 	<body>
@@ -89,30 +95,47 @@
 		<li onclick="play('11314', 2)">
 			<img class="image" src="ss/batreaux.png"/>
 			<span class="name">Batreaux</span>
+			<span class="pun">Bat</span>
 		</li>
 		<li onclick="play('9918', 2)">
 			<img class="image" src="ss/beedle.png"/>
 			<span class="name">Beedle</span>
+			<span class="pun">Beetle</span>
 		</li>
 		<li onclick="play('15720')">
 			<img class="image" src="ss/bertie.png"/>
 			<span class="name">Bertie</span>
+			<span class="pun">Birdie</span>
 		</li>
 		<li onclick="play('13216')">
 			<img class="image" src="ss/bucha.png"/>
 			<span class="name">Bucha</span>
+			<span class="pun"><a href="https://en.wikipedia.org/wiki/Kombucha">Kombucha</a></span>
 		</li>
 		<li onclick="play('8960')">
 			<img class="image" src="ss/cawlin.png"/>
 			<span class="name">Cawlin</span>
+			<span class="pun">Macaw</span>
+		</li>
+		<li onclick="play('11401', 3)">
+			<img class="image" src="ss/cobal.png"/>
+			<span class="name">Cobal</span>
+			<span class="pun">Cobalt</span>
+		</li>
+		<li onclick="play('1167', 3)">
+			<img class="image" src="ss/dodoh.png"/>
+			<span class="name">Dodoh</span>
+			<span class="pun">Dodo</span>
 		</li>
 		<li onclick="play('3970')">
 			<img class="image" src="ss/eagus.png"/>
 			<span class="name">Eagus</span>
+			<span class="pun">Eagle</span>
 		</li>
 		<li onclick="play('14631')">
 			<img class="image" src="ss/erla.png"/>
 			<span class="name">Erla</span>
+			<span class="pun">Erlang</span>
 		</li>
 		<li onclick="play('7773')">
 			<img class="image" src="ss/fi.png"/>
@@ -121,10 +144,12 @@
 		<li onclick="play('1440')">
 			<img class="image" src="ss/fledge.png"/>
 			<span class="name">Fledge</span>
+			<span class="pun">Fledgling</span>
 		</li>
 		<li onclick="play('2383')">
 			<img class="image" src="ss/gaepora.png"/>
 			<span class="name">Gaepora</span>
+			<span class="pun">Kaepora Gaepora</span>
 		</li>
 		<li onclick="play('7898', 2)">
 			<img class="image" src="ss/ghirahim.png"/>
@@ -133,42 +158,66 @@
 		<li onclick="play('9607')">
 			<img class="image" src="ss/gondo.png"/>
 			<span class="name">Gondo</span>
+			<span class="pun">Condor</span>
 		</li>
 		<li onclick="play('11863')">
 			<img class="image" src="ss/gorko.png"/>
 			<span class="name">Gorko</span>
+			<span class="pun">Marco Polo</span>
 		</li>
 		<li onclick="play('3422')">
 			<img class="image" src="ss/groose.png"/>
 			<span class="name">Groose</span>
+			<span class="pun">Goose</span>
 		</li>
 		<li onclick="play('3336')">
 			<img class="image" src="ss/gully.png"/>
 			<span class="name">Gully</span>
+			<span class="pun">Gull</span>
 		</li>
 		<li onclick="play('1581')">
 			<img class="image" src="ss/horwell.png"/>
 			<span class="name">Horwell</span>
+			<span class="pun">Horned Owl</span>
+		</li>
+		<li onclick="play('15978.5', 3)">
+			<img class="image" src="ss/impa.png"/>
+			<span class="name">Impa</span>
 		</li>
 		<li onclick="play('1750')">
 			<img class="image" src="ss/jakamar.png"/>
 			<span class="name">Jakamar</span>
+			<span class="pun">Jacamar</span>
 		</li>
 		<li onclick="play('3180')">
 			<img class="image" src="ss/karane.png"/>
 			<span class="name">Karane</span>
+			<span class="pun">Crane</span>
 		</li>
 		<li onclick="play('3719')">
 			<img class="image" src="ss/keet.png"/>
 			<span class="name">Keet</span>
+			<span class="pun">Parakeet</span>
 		</li>
 		<li onclick="play('10324', 2)">
 			<img class="image" src="ss/kina.png"/>
 			<span class="name">Kina</span>
+			<span class="pun">Pumpkin</span>
+		</li>
+		<li onclick="play('2302', 3)">
+			<img class="image" src="ss/kortz.png"/>
+			<span class="name">Kortz</span>
+			<span class="pun">Quartz</span>
 		</li>
 		<li onclick="play('11514', 2)">
 			<img class="image" src="ss/kukiel.png"/>
 			<span class="name">Kukiel</span>
+			<span class="pun">Cockatiel</span>
+		</li>
+		<li onclick="play('1897.5', 3)">
+			<img class="image" src="ss/ledd.png"/>
+			<span class="name">Ledd</span>
+			<span class="pun">Lead</span>
 		</li>
 		<li onclick="play('10852', 2)">
 			<img class="image" src="ss/link.png"/>
@@ -177,14 +226,27 @@
 		<li onclick="play('14182')">
 			<img class="image" src="ss/lopsa.png"/>
 			<span class="name">Lopsa</span>
+			<span class="pun">Lapsang Souchong</span>
 		</li>
 		<li onclick="play('9631')">
 			<img class="image" src="ss/luv.png"/>
 			<span class="name">Luv</span>
+			<span class="pun">Lovebird</span>
 		</li>
 		<li onclick="play('12697')">
 			<img class="image" src="ss/machi.png"/>
 			<span class="name">Machi</span>
+			<span class="pun">Matcha</span>
+		</li>
+		<li onclick="play('2512.5', 3)">
+			<img class="image" src="ss/merco.png"/>
+			<span class="name">Merco</span>
+			<span class="pun">Mercury</span>
+		</li>
+		<li onclick="play('3556', 3)">
+			<img class="image" src="ss/nackle.png"/>
+			<span class="name">Nackle</span>
+			<span class="pun">Nickel</span>
 		</li>
 		<li onclick="play('11347')">
 			<img class="image" src="ss/old_woman3.png"/>
@@ -193,50 +255,72 @@
 		<li onclick="play('14937')">
 			<img class="image" src="ss/oolo.png"/>
 			<span class="name">Oolo</span>
+			<span class="pun">Oolong</span>
 		</li>
 		<li onclick="play('5974')">
 			<img class="image" src="ss/owlan.png"/>
 			<span class="name">Owlan</span>
+			<span class="pun">Owl</span>
 		</li>
 		<li onclick="play('10792', 2)">
 			<img class="image" src="ss/parrow.png"/>
 			<span class="name">Parrow</span>
+			<span class="pun">Sparrow</span>
 		</li>
 		<li onclick="play('9580')">
 			<img class="image" src="ss/peatrice.png"/>
 			<span class="name">Peatrice</span>
+			<span class="pun">Peahen</span>
 		</li>
 		<li onclick="play('1364')">
 			<img class="image" src="ss/pipit.png"/>
 			<span class="name">Pipit</span>
+			<span class="pun">Pipit</span>
 		</li>
 		<li onclick="play('3807')">
 			<img class="image" src="ss/pipit_it.png"/>
 			<span class="name">Pipit (Italian)</span>
+			<span class="pun">Pipit</span>
 		</li>
 		<li onclick="play('10340', 2)">
 			<img class="image" src="ss/pumm.png"/>
 			<span class="name">Pumm</span>
+			<span class="pun">Pumpkin</span>
 		</li>
 		<li onclick="play('15681')">
 			<img class="image" src="ss/rupin.png"/>
 			<span class="name">Rupin</span>
+			<span class="pun">Robin</span>
 		</li>
 		<li onclick="play('10261', 2)">
 			<img class="image" src="ss/rusta.png"/>
 			<span class="name">Rusta</span>
+			<span class="pun">Rooster</span>
 		</li>
 		<li onclick="play('9536')">
 			<img class="image" src="ss/sparrot.png"/>
 			<span class="name">Sparrot</span>
+			<span class="pun">Parrot</span>
 		</li>
 		<li onclick="play('10219', 2)">
 			<img class="image" src="ss/strich.png"/>
 			<span class="name">Strich</span>
+			<span class="pun">Ostrich</span>
+		</li>
+		<li onclick="play('4272', 3)">
+			<img class="image" src="ss/tyto.png"/>
+			<span class="name">Tyto</span>
+			<span class="pun">Titanium</span>
 		</li>
 		<li onclick="play('10663', 2)">
 			<img class="image" src="ss/wryna.png"/>
 			<span class="name">Wryna</span>
+			<span class="pun">Wren</span>
+		</li>
+		<li onclick="play('2785', 3)">
+			<img class="image" src="ss/zanc.png"/>
+			<span class="name">Zanc</span>
+			<span class="pun">Zinc</span>
 		</li>
 		<li onclick="play('2297')">
 			<img class="image" src="ss/zelda.png"/>
