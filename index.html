@@ -6,16 +6,11 @@
 	<link rel="icon" href="ss/favicon.png"> 
     <meta name="viewport" content="width=device-width"/>
 	<script>
-	const play = (time, video) => {
-		if (video == 4) {
-			playAt(time, 'T3-pXhDtekQ');
-		} else if (video == 3) {
-			playAt(time, 'ocp8VDZqLE8');
-		} else if (video == 2) {
-			playAt(time, 'aH2LQcPdgbI');
-		} else {
-			playAt(time, '6MO81KCYz-k');
-		}
+	let videos = ['6MO81KCYz-k', 'aH2LQcPdgbI', 'ocp8VDZqLE8',
+				  'T3-pXhDtekQ', '6ExAr438hzM', '-lpRK57SoFc',
+				  '0SpY6yP-xT8'];
+	const play = (time, video = 1) => {
+		playAt(time, videos[video - 1]);
 	}
 	const playAt = (time, video) => {
 		player.cueVideoById({
@@ -129,6 +124,11 @@
 			<span class="name">Dodoh</span>
 			<span class="pun"><a href="https://en.wikipedia.org/wiki/Dodo">Dodo</a></span>
 		</li>
+		<li onclick="play('9620', 5)">
+			<img class="image" src="ss/dovos.png"/>
+			<span class="name">Dovos</span>
+			<span class="pun"><a href="https://en.wikipedia.org/wiki/Dove">Dove</a></span>
+		</li>
 		<li onclick="play('3970')">
 			<img class="image" src="ss/eagus.png"/>
 			<span class="name">Eagus</span>
@@ -138,6 +138,10 @@
 			<img class="image" src="ss/erla.png"/>
 			<span class="name">Erla</span>
 			<span class="pun"><a href="https://en.wikipedia.org/wiki/Earl_Grey_tea">Earl Grey</a></span>
+		</li>
+		<li onclick="play('19908', 5)">
+			<img class="image" src="ss/faron.png"/>
+			<span class="name">Faron</span>
 		</li>
 		<li onclick="play('7773')">
 			<img class="image" src="ss/fi.png"/>
@@ -168,6 +172,10 @@
 			<span class="name">Gorko</span>
 			<span class="pun"><a href="https://en.wikipedia.org/wiki/Marco_Polo">Marco Polo</a></span>
 		</li>
+		<li onclick="play('9078', 5)">
+			<img class="image" src="ss/gossip.png"/>
+			<span class="name">Gossip Stone</span>
+		</li>
 		<li onclick="play('3422')">
 			<img class="image" src="ss/groose.png"/>
 			<span class="name">Groose</span>
@@ -191,6 +199,11 @@
 			<img class="image" src="ss/jakamar.png"/>
 			<span class="name">Jakamar</span>
 			<span class="pun"><a href="https://en.wikipedia.org/wiki/Jacamar">Jacamar</a></span>
+		</li>
+		<li onclick="play('18707', 5)">
+			<img class="image" src="ss/jellyf.png"/>
+			<span class="name">Jellyf</span>
+			<span class="pun"><a href="https://en.wikipedia.org/wiki/Jellyfish">Jellyfish</a></span>
 		</li>
 		<li onclick="play('3180')">
 			<img class="image" src="ss/karane.png"/>
@@ -241,6 +254,11 @@
 			<span class="name">LD-301 Series</span>
 			<span class="pun">Lanayru Desert</span>
 		</li>
+		<li onclick="play('11684', 5)">
+			<img class="image" src="ss/scrapper.png"/>
+			<span class="name">LD-301S Scrapper</span>
+			<span class="pun">Lanayru Desert</span>
+		</li>
 		<li onclick="play('12697')">
 			<img class="image" src="ss/machi.png"/>
 			<span class="name">Machi</span>
@@ -275,6 +293,11 @@
 			<span class="name">Orielle</span>
 			<span class="pun"><a href="https://en.wikipedia.org/wiki/Old_World_oriole">Oriole</a></span>
 		</li>
+		<li onclick="play('18880', 5)">
+			<img class="image" src="ss/parella.png"/>
+			<span class="name">Parella</span>
+			<span class="pun"><a href="https://en.wikipedia.org/wiki/Umbrella">Parasol / Umbrella</a></span>
+		</li>
 		<li onclick="play('10792', 2)">
 			<img class="image" src="ss/parrow.png"/>
 			<span class="name">Parrow</span>
@@ -289,6 +312,11 @@
 			<img class="image" src="ss/peater.png"/>
 			<span class="name">Peater</span>
 			<span class="pun"><a href="https://en.wikipedia.org/wiki/Peafowl">Peacock</a></span>
+		</li>
+		<li onclick="play('10758', 5)">
+			<img class="image" src="ss/phoeni.png"/>
+			<span class="name">Phoeni</span>
+			<span class="pun"><a href="https://en.wikipedia.org/wiki/Phoenix_(mythology)">Phoenix</a></span>
 		</li>
 		<li onclick="play('1364')">
 			<img class="image" src="ss/pipit.png"/>
@@ -334,6 +362,11 @@
 			<img class="image" src="ss/wryna.png"/>
 			<span class="name">Wryna</span>
 			<span class="pun"><a href="https://en.wikipedia.org/wiki/Wren">Wren</a></span>
+		</li>
+		<li onclick="play('17880', 5)">
+			<img class="image" src="ss/yerbal.png"/>
+			<span class="name">Yerbal</span>
+			<span class="pun"><a href="https://en.wikipedia.org/wiki/Herbal_tea">Herbal tea</a></span>
 		</li>
 		<li onclick="play('2785', 3)">
 			<img class="image" src="ss/zanc.png"/>
