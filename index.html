@@ -6,9 +6,8 @@
 	<link rel="icon" href="ss/favicon.png"> 
     <meta name="viewport" content="width=device-width"/>
 	<script>
-	let videos = ['6MO81KCYz-k', 'aH2LQcPdgbI', 'ocp8VDZqLE8',
-				  'T3-pXhDtekQ', '6ExAr438hzM', '-lpRK57SoFc',
-				  '0SpY6yP-xT8'];
+	let videos = ['6MO81KCYz-k', 'aH2LQcPdgbI', 'ocp8VDZqLE8', 'T3-pXhDtekQ',
+				  '6ExAr438hzM', '-lpRK57SoFc', '0SpY6yP-xT8', 'UGoki9bUBaI'];
 	const play = (time, video = 1) => {
 		playAt(time, videos[video - 1]);
 	}
@@ -103,6 +102,11 @@
 			<img class="image" src="ss/bertie.png"/>
 			<span class="name">Bertie</span>
 			<span class="pun"><a href="https://en.wiktionary.org/wiki/birdie#Noun">Birdie</a> or <a href="https://en.wikipedia.org/wiki/Lovebird">Lovebird</a> (with wife Luv)</span>
+		</li>
+		<li onclick="play('9689', 8)">
+			<img class="image" src="ss/bronzi.png"/>
+			<span class="name">Bronzi</span>
+			<span class="pun"><a href="https://en.wikipedia.org/wiki/Bronze">Bronze</a></span>
 		</li>
 		<li onclick="play('13216')">
 			<img class="image" src="ss/bucha.png"/>
@@ -200,6 +204,11 @@
 			<img class="image" src="ss/groose.png"/>
 			<span class="name">Groose</span>
 			<span class="pun"><a href="https://en.wikipedia.org/wiki/Goose">Goose</a></span>
+		</li>
+		<li onclick="play('7037', 8)">
+			<img class="image" src="ss/guld.png"/>
+			<span class="name">Guld</span>
+			<span class="pun"><a href="https://en.wikipedia.org/wiki/Gold">Gold</a></span>
 		</li>
 		<li onclick="play('3336')">
 			<img class="image" src="ss/gully.png"/>
@@ -358,6 +367,11 @@
 			<span class="name">Pipit (Italian)</span>
 			<span class="pun"><a href="https://en.wikipedia.org/wiki/Pipit">Pipit</a></span>
 		</li>
+		<li onclick="play('10689', 8)">
+			<img class="image" src="ss/plats.png"/>
+			<span class="name">Plats</span>
+			<span class="pun"><a href="https://en.wikipedia.org/wiki/Platinum">Platinum</a></span>
+		</li>
 		<li onclick="play('10340', 2)">
 			<img class="image" src="ss/pumm.png"/>
 			<span class="name">Pumm</span>
@@ -372,6 +386,11 @@
 			<img class="image" src="ss/rusta.png"/>
 			<span class="name">Rusta</span>
 			<span class="pun"><a href="https://en.wikipedia.org/wiki/Rooster">Rooster</a></span>
+		</li>
+		<li onclick="play('7810', 8)">
+			<img class="image" src="ss/silva.png"/>
+			<span class="name">Silva</span>
+			<span class="pun"><a href="https://en.wikipedia.org/wiki/Silver">Silver</a></span>
 		</li>
 		<li onclick="play('9536')">
 			<img class="image" src="ss/sparrot.png"/>
@@ -433,7 +452,7 @@
 		}
 
 		function onPlayerReady(event) {
-			player.cueVideoById({ videoId: '6MO81KCYz-k' });
+			player.cueVideoById({ videoId: videos[0] });
 		}
   		</script>
 	</body>
